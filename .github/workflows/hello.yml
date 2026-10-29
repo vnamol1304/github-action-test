@@ -13,7 +13,7 @@ jobs:
   greet:
 
 #this is github runner to run job    
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: say hello to users
         run: echo"hello dosto"
