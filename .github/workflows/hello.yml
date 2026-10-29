@@ -13,10 +13,10 @@ jobs:
   greet:
 
 #this is github runner to run job    
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
       - name: say hello to users
-        run: echo"hello dosto"
+        run: echo "hello dosto"
 
       - name: say hello to username
         run: echo "hello $USER"
