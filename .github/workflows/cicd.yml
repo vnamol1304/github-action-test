@@ -1,10 +1,10 @@
-name: CICD
+name: CICD #workflow name
 on:
   workflow_dispatch: null
 jobs:
 
-  code:
-    runs-on: ubuntu-latest
+  code: #jobs name
+    runs-on: ubuntu-latest  #runner - every job has seperate runner- also called as parallel scalling
     steps:
       - name: checkout the code
         run: echo "get/clone the code from Git"
