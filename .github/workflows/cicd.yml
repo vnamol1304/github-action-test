@@ -2,21 +2,25 @@ name: CICD
 on:
   workflow_dispatch: null
 jobs:
+
   code:
     runs-on: ubuntu-latest
     steps:
       - name: checkout the code
         run: echo "get/clone the code from Git"
+        
   build:
     runs-on: ubuntu-latest
     steps:
       - name: build the code
         run: echo "build the container/code"
+        
   test:
     runs-on: ubuntu-latest
     steps:
       - name: test the code
         run: echo "test the container/code"
+        
   deploy:
     runs-on: ubuntu-latest
     steps:
